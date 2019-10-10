@@ -1,6 +1,6 @@
 # GIT Lesson
 
-```Git:  
+```Bash:  
 Commands
 git --version
 git version
@@ -11,32 +11,33 @@ Git will require two things to start:
 1. username
 2. email
 
-```Git:  
+```Bash:  
 Commands
 git config --global.user "nileshlaxmi"
 git config --global.email "nileshlaxmi4@gmail.com"
 
-git config --global --list // It will list user and email
+git config --global --list # It will list user and email
 
-git clone "repo clone url" // It will clone the remote repo
+git clone "repo clone url" # It will clone the remote repo
 
-ls // list all repo inside a folder
+ls # list all repo inside a folder
 
-cd clone_repo // will go inside cloned-repo
+cd clone_repo # will go inside cloned-repo
 
-git status // will tell on which branch you are and if there is anything to commit or not
+git status # will tell on which branch you are and if there is anything to commit or not
 
-touch filename // will create a file
+touch filename # will create a file
 
-echo "hello world" >> filename // hello world will be printed inside a new file if that file is not present.
+echo "hello world" >> filename 
+# hello world will be printed inside a new file if that file is not present.
 
-cat filename // will display file content
+cat filename # will display file content
 
-git add . // will add all file
+git add . # will add all file
 
-git add filename // will add single file of its name provided
+git add filename # will add single file of its name provided
 
-git commit -m "commit message" // will commit with a message
+git commit -m "commit message" # will commit with a message
 
 git push origin master
 or
@@ -56,4 +57,3 @@ Git has 2 repos and 4 states:
 
     * Remote:
         * Remote State (by using push: we moved to remote repo)
-
