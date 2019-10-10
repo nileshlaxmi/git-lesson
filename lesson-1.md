@@ -28,7 +28,7 @@ git status # will tell on which branch you are and if there is anything to commi
 
 touch filename # will create a file
 
-echo "hello world" >> filename 
+echo "hello world" >> filename
 # hello world will be printed inside a new file if that file is not present.
 
 cat filename # will display file content
@@ -43,6 +43,12 @@ git push origin master
 or
 git push
 (in master: upstream link is already created by when we clone the repo.)
+
+git push origin branchname
+# it will move your branch remote repo but will not create a upstream link. Every time you have to write whole command not git push.
+
+git push --set-upstream origin branch/name
+# it will move your branch remote repo but will create a upstream link, next time you will need only git push
 
 ```
 
