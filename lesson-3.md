@@ -25,3 +25,13 @@ git push origin branchname
 ```
 
 **BEST Practices** : Always pull your branch before pushing it.
+
+## Tracked Files
+
+```bash
+git commit -am "Adding more text"
+
+# -am: it will add and commit your files but only the tracked ones.  
+```
+
+***Tracked files*** are those files which are already added and committed to the git repo.
