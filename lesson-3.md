@@ -195,4 +195,3 @@ Git Ignore Pattern Examples - One file/dir per line
 * Specific file: myfile.txt
 * File pattern: *.log
 * Folder/Dir: node_modules/
-
