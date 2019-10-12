@@ -19,4 +19,5 @@ rm -rf foldername # it will delete all files present inside that folder recursiv
 
 unzip filename.zip # it will unzip your file
 
+mkdir -p l1/l2/l3 # p flag helps to create folder
 ```
