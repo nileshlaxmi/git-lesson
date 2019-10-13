@@ -48,3 +48,10 @@ git stash list
 
 git stash clear # will cleared all stash
 ```
+
+## Stashing into a Branch
+
+```bash
+git stash branch stashBranchName
+# a new branch will be created, all the stash will be applied and the stash will be dropped.
+```
