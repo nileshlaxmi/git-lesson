@@ -42,7 +42,7 @@ git tag -a v0.9-beta commitID "beta version" # new commit tag
 2. Doing it forcefully
 
 ```bash
-#2nd way:
+# 2nd way:
 git tag -a v0.9-beta -f commitID "beta version"
 ```
 
