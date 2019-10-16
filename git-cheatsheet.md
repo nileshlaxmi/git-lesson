@@ -32,8 +32,13 @@ git branch -D branchName # -D flag is for delete forcefully
 git push origin --delete branchName
 
 # Renaming branch
-# Local
+# Local branch when you are on same branch
 git branch -m "new/BranchName"
+
+# Rename the local branch to the new name when you are different branch
+git branch -m <old_name> <new_name>
+
+# -m : move
 
 # Remote : You can't directly rename a remote branch. You have to delete it and then re-push it.
 ```
@@ -56,4 +61,15 @@ git push <remote> new_name
 
 # Reset the upstream branch for the new_name local branch
 git push <remote> -u new-name # -u flag will create the upstream link
+
+# Fetching from branch
+git fetch origin branchName
+
+# Pulling from branch
+git pull origin branchName
 ```
+
+**Difference between fetch and pull:**
+
+Fetch will fetch the data from remote directory or branch while
+Pull will fetch as well as merge the data with local data.
