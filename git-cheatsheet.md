@@ -73,3 +73,25 @@ git pull origin branchName
 
 Fetch will fetch the data from remote directory or branch while
 Pull will fetch as well as merge the data with local data.
+
+## Tagging
+
+```bash
+git tag -a 'Demo_1_0' -m 'Tagged Demo version' HEAD
+git push origin tag Demo_1_0
+git tag -l # view tags
+git tag -a v1.2 9fceb02(specific commit) -m "Message here"
+git tag v1.0 name_of_other_branch
+git tag v1.0 <sha1> - Hash code of specific commit
+
+# If you create a tag by e.g.
+git tag v1.0
+# the tag will refer to the most recent commit of the branch you are currently on. You can change branch and create a tag there.
+
+# You can also just refer to the other branch while tagging,
+git tag v1.0 name_of_other_branch
+# which will create the tag to the most recent commit of the other branch.
+
+# Or you can just put the tag anywhere, no matter which branch, by directly referencing to the SHA1 of some commit
+git tag v1.0 <sha1>
+```
