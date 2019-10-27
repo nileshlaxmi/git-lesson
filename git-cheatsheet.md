@@ -95,3 +95,27 @@ git tag v1.0 name_of_other_branch
 # Or you can just put the tag anywhere, no matter which branch, by directly referencing to the SHA1 of some commit
 git tag v1.0 <sha1>
 ```
+
+## Rebase and Reflog
+
+```bash
+# Moving to specific commit
+# 1st way:
+git reset commitID
+
+git reset HEAD@{2}
+# will reset HEAD^^ i.e. HEAD-2
+
+git log # will show history
+git reflog # will show log of all activities
+```
+
+### **HEAD** will always represent the last commit on current branch
+
+### Types of reset
+
+1. Mixed: will reset staging, moves HEAD to specific id.
+
+2. Hard: will reset local, working directory and staging area, moves HEAD to specific id.
+
+3. Soft: will move HEAD to specific id.
